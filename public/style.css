@@ -1,0 +1,71 @@
+:root {
+  background: hsl(0, 0%, 80%);
+}
+
+body {
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+form {
+  display: grid;
+  background: hsl(161, 87%, 31%);
+  padding: 15px;
+  border-radius: 10px;
+  width: 504px;
+  margin:auto;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  grid-template-rows: repeat(3, 50px);
+  grid-template-columns: repeat(3, 1 fr);
+  grid-template-areas: "select select select"
+                       "base   arrow  result"
+                       ".      button      .";
+}
+
+select {
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 4px;
+  grid-area: select;
+}
+
+form div {
+  display: grid;
+  margin: 10px;
+  justify-content: center;
+}
+
+input[type='number'] {
+  padding: 2px;
+  border-radius: 4px;
+}
+
+#arrow {
+  grid-area: arrow;
+  padding-top: 25px;
+}
+
+#button {
+  grid-area: button;
+  padding-top: 15px;
+}
+
+input[type='submit'] {
+  background: transparent;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+input[type='submit']:hover {
+  background: blue;
+}
+
+i {
+  color: white;
+}
